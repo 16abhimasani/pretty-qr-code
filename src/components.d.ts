@@ -5,9 +5,9 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { AnimationPreset, QRCodeAnimation } from "./components/bp-qr-code/animations";
+import { AnimationPreset, QRCodeAnimation } from "./components/pretty-qr-code/animations";
 export namespace Components {
-    interface BpQrCode {
+    interface PrettyQrCode {
         "animateQRCode": (animation?: AnimationPreset | QRCodeAnimation) => Promise<void>;
         "contents": string;
         "getModuleCount": () => Promise<number>;
@@ -20,18 +20,18 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLBpQrCodeElement extends Components.BpQrCode, HTMLStencilElement {
+    interface HTMLPrettyQrCodeElement extends Components.PrettyQrCode, HTMLStencilElement {
     }
-    var HTMLBpQrCodeElement: {
-        prototype: HTMLBpQrCodeElement;
-        new (): HTMLBpQrCodeElement;
+    var HTMLPrettyQrCodeElement: {
+        prototype: HTMLPrettyQrCodeElement;
+        new (): HTMLPrettyQrCodeElement;
     };
     interface HTMLElementTagNameMap {
-        "bp-qr-code": HTMLBpQrCodeElement;
+        "pretty-qr-code": HTMLPrettyQrCodeElement;
     }
 }
 declare namespace LocalJSX {
-    interface BpQrCode {
+    interface PrettyQrCode {
         "contents"?: string;
         "legacy"?: boolean;
         "maskXToYRatio"?: number;
@@ -42,14 +42,14 @@ declare namespace LocalJSX {
         "protocol"?: string;
     }
     interface IntrinsicElements {
-        "bp-qr-code": BpQrCode;
+        "pretty-qr-code": PrettyQrCode;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "bp-qr-code": LocalJSX.BpQrCode & JSXBase.HTMLAttributes<HTMLBpQrCodeElement>;
+            "pretty-qr-code": LocalJSX.PrettyQrCode & JSXBase.HTMLAttributes<HTMLPrettyQrCodeElement>;
         }
     }
 }

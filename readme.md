@@ -15,16 +15,16 @@ https://ash.bhimasani.com/bitpay/invoice/demos#bip21Mode
 
 ## Usage
 
-Import the `bp-qr-code` component properly using your build system/framework, or use the standalone script:
+Import the `pretty-qr-code` component properly using your build system/framework, or use the standalone script:
 
 ```html
-<script src="/path/to/bp-qr-code.js"></script>
+<script src="/path/to/pretty-qr-code.js"></script>
 ```
 
 Then use the component anywhere in the document:
 
 ```html
-<bp-qr-code></bp-qr-code>
+<pretty-qr-code></pretty-qr-code>
 ```
 
 To use the `animateQRCode` method, the [Web Animations API polyfill](https://github.com/web-animations/web-animations-js) is required for [good browser support](https://github.com/web-animations/web-animations-js/blob/c5bf98eb447a76910297b8ccd011ace3310d1372/docs/support.md#browser-support). Import it properly with your build system, or
@@ -38,7 +38,7 @@ To use the `animateQRCode` method, the [Web Animations API polyfill](https://git
 Here's an example taking advantage of all configuration options:
 
 ```html
-<bp-qr-code
+<pretty-qr-code
   id="qr1"
   contents="customprotocol:?r=https://bitpay.com/i/exampleh3mCKGUna7v9S1z"
   module-color="#1c7d43"
@@ -48,7 +48,7 @@ Here's an example taking advantage of all configuration options:
   style="width: 200px; height: 200px; background-color: #fff"
 >
   <img src="assets/icon.svg" slot="icon" />
-</bp-qr-code>
+</pretty-qr-code>
 <script>
   setTimeout(() => {
     document.getElementById("qr1").animateQRCode("MaterializeIn");

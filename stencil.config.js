@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'bp-qr-code',
+  namespace: 'pretty-qr-code',
   outputTargets: [
     {
       type: 'dist'

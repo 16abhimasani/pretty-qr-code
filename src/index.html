@@ -12,13 +12,13 @@
         >
         <title>Pretty QR Code</title>
         <script src="https://unpkg.com/web-animations-js@2.3.1/web-animations.min.js"></script>
-        <script type="module" src="/build/bp-qr-code.esm.js"></script>
-        <script nomodule src="/build/bp-qr-code.js"></script>
+        <script type="module" src="/build/pretty-qr-code.esm.js"></script>
+        <script nomodule src="/build/pretty-qr-code.js"></script>
     </head>
 
     <body style="background-color: #ddd">
 
-        <bp-qr-code
+        <pretty-qr-code
             id="qr1"
             contents="bitcoincash:?r=https://bitpay.com/i/exampleh3mCKGUna7v9S1z"
             module-color="#346E59"
@@ -31,9 +31,9 @@
                 src="assets/bch-bill.svg"
                 slot="icon"
             >
-        </bp-qr-code>
+        </pretty-qr-code>
 
-        <bp-qr-code
+        <pretty-qr-code
             contents="bitcoin:?r=https://bitpay.com/i/exampleh3mCKGUna7v9S1z"
             module-color="#CB5F12"
             position-ring-color="#593F33"
@@ -44,10 +44,10 @@
                 src="assets/btc.svg"
                 slot="icon"
             >
-        </bp-qr-code>
+        </pretty-qr-code>
 
         <!-- alternative logo -->
-        <bp-qr-code
+        <pretty-qr-code
             contents="bitcoincash:?r=https://bitpay.com/i/exampleh3mCKGUna7v9S1z"
             module-color="#1c7d43"
             position-ring-color="#13532d"
@@ -58,21 +58,21 @@
                 src="assets/bch.svg"
                 slot="icon"
             >
-        </bp-qr-code>
+        </pretty-qr-code>
 
-        <bp-qr-code
+        <pretty-qr-code
             contents="bitcoincash:?r=https://bitpay.com/i/exampleh3mCKGUna7v9S1z"
             protocol="bitcoincash"
             style="width: 150px;"
-        ></bp-qr-code>
+        ></pretty-qr-code>
 
-        <bp-qr-code
+        <pretty-qr-code
             contents="bitcoin:?r=https://bitpay.com/i/exampleh3mCKGUna7v9S1z"
             protocol="bitcoin"
             style="width: 150px;"
-        ></bp-qr-code>
+        ></pretty-qr-code>
 
-        <bp-qr-code
+        <pretty-qr-code
             contents="https://bitpay.com/"
             protocol="BCH"
             legacy="true"
@@ -83,14 +83,14 @@
                 src="assets/bch.svg"
                 slot="icon"
             >
-        </bp-qr-code>
+        </pretty-qr-code>
 
-        <bp-qr-code
+        <pretty-qr-code
             contents="bitcoincash:?r=https://bitpay.com/i/exampleh3mCKGUna7v9S1z"
             module-color="#53749f"
             position-center-color="#53749f"
             style="width: 100px;"
-        ></bp-qr-code>
+        ></pretty-qr-code>
 
         <script>
             console.log('Hello from index.html');

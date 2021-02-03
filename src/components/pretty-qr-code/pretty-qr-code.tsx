@@ -26,11 +26,11 @@ import {
 } from './animations';
 
 @Component({
-  tag: 'bp-qr-code',
-  styleUrl: 'bp-qr-code.css',
+  tag: 'pretty-qr-code',
+  styleUrl: 'pretty-qr-code.css',
   shadow: true
 })
-export class BpQRCode {
+export class PrettyQRCode {
   @Element() qrCodeElement: HTMLElement;
 
   @Prop() contents = '';
