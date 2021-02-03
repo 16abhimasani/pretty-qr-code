@@ -1,6 +1,17 @@
-# BitPay QR Code
+<p align="center">
+  <img src="https://ash.bhimasani.com/imgs/invoice/select/wallet-link.png" />
+</p>
+
+<hr />
+
+# Pretty QR Code
 
 A framework-less QR Code Web Component.
+
+## Demos
+
+https://ash.bhimasani.com/bitpay/invoice/demos#walletConnect  
+https://ash.bhimasani.com/bitpay/invoice/demos#bip21Mode
 
 ## Usage
 
@@ -27,23 +38,22 @@ To use the `animateQRCode` method, the [Web Animations API polyfill](https://git
 Here's an example taking advantage of all configuration options:
 
 ```html
- <bp-qr-code
-    id="qr1"
-    contents="customprotocol:?r=https://bitpay.com/i/exampleh3mCKGUna7v9S1z"
-    module-color="#1c7d43"
-    position-ring-color="#13532d"
-    position-center-color="#1c7d43"
-    mask-x-to-y-ratio="1.2"
-    style="width: 200px; height: 200px; background-color: #fff">
-    <img src="assets/icon.svg" slot="icon">
-  </bp-qr-code>
-  <script>
-    setTimeout(() => {
-      document
-        .getElementById('qr1')
-        .animateQRCode('MaterializeIn');
-    }, 1000);
-  </script>
+<bp-qr-code
+  id="qr1"
+  contents="customprotocol:?r=https://bitpay.com/i/exampleh3mCKGUna7v9S1z"
+  module-color="#1c7d43"
+  position-ring-color="#13532d"
+  position-center-color="#1c7d43"
+  mask-x-to-y-ratio="1.2"
+  style="width: 200px; height: 200px; background-color: #fff"
+>
+  <img src="assets/icon.svg" slot="icon" />
+</bp-qr-code>
+<script>
+  setTimeout(() => {
+    document.getElementById("qr1").animateQRCode("MaterializeIn");
+  }, 1000);
+</script>
 ```
 
 For more examples, [see `index.html`](./src/index.html) or clone this repo, `npm install`, and `npm start`.
@@ -53,18 +63,18 @@ For more examples, [see `index.html`](./src/index.html) or clone this repo, `npm
 You'll need [Node.js](https://nodejs.org/en/download/), then:
 
 ```bash
-npm install
-npm start
+yarn
+yarn start
 ```
 
 ### Production build
 
 ```bash
-npm run build
+yarn build
 ```
 
 ### Run the tests
 
 ```bash
-npm test
+yarn test
 ```

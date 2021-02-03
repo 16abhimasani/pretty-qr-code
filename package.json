@@ -1,7 +1,7 @@
 {
-  "name": "@bitpay/qr-code",
-  "version": "0.0.1",
-  "description": "BitPay's QR Code Web Component",
+  "name": "pretty-qr-code",
+  "version": "1.0.0",
+  "description": "Pretty QR Codes: Created by BitPay. Inspired by Cash App.",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -19,13 +19,13 @@
     "test.watch": "jest --watch"
   },
   "dependencies": {
-    "just-animate": "^2.5.0",
-    "qrcode-generator": "^1.4.0"
+    "just-animate": "2.6.2",
+    "qrcode-generator": "1.4.4"
   },
   "devDependencies": {
-    "@stencil/core": "^0.10.2",
-    "@types/jest": "^21.1.1",
-    "jest": "^21.2.1"
+    "@stencil/core": "2.4.0",
+    "@types/jest": "26.0.20",
+    "jest": "26.6.3"
   },
   "repository": {
     "type": "git",

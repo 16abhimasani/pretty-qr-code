@@ -3,6 +3,7 @@ import {
   Element,
   Event,
   EventEmitter,
+  h,
   Prop,
   Method,
   State,
@@ -83,14 +84,14 @@ export class BpQRCode {
   }
 
   @Method()
-  animateQRCode(animation?: AnimationPreset | QRCodeAnimation) {
+  async animateQRCode(animation?: AnimationPreset | QRCodeAnimation) {
     this.executeAnimation(
       typeof animation === 'string' ? getAnimationPreset(animation) : animation
     );
   }
 
   @Method()
-  getModuleCount() {
+  async getModuleCount() {
     return this.moduleCount;
   }
 

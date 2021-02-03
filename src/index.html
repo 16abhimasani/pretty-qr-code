@@ -10,9 +10,10 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
         >
-        <title>BitPay QR Code</title>
+        <title>Pretty QR Code</title>
         <script src="https://unpkg.com/web-animations-js@2.3.1/web-animations.min.js"></script>
-        <script src="/build/bp-qr-code.js"></script>
+        <script type="module" src="/build/bp-qr-code.esm.js"></script>
+        <script nomodule src="/build/bp-qr-code.js"></script>
     </head>
 
     <body style="background-color: #ddd">
@@ -24,7 +25,7 @@
             position-ring-color="#385A4E"
             position-center-color="#70C559"
             mask-x-to-y-ratio="1.2"
-            style="width: 60vw; height: 60vw; background-color: #fff"
+            style="width: 512px; height: 512px; background-color: #fff"
         >
             <img
                 src="assets/bch-bill.svg"
