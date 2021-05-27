@@ -18,6 +18,24 @@
 
     <body style="background-color: #ddd">
 
+        <<img src="assets/qr.svg" />
+
+        <pretty-qr-code
+            id="qr1"
+            contents="https://hash.pob.studio/art/0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060"
+            module-color="#252628"
+            position-ring-color="#252628"
+            position-center-color="#252628"
+            mask-x-to-y-ratio="1"
+            style="width: 512px; height: 512px; background-color: #fff"
+        >
+            <img
+            style="width: 128px; height: 128px"
+                src="assets/pob.svg"
+                slot="icon"
+            >
+        </pretty-qr-code>
+
         <pretty-qr-code
             id="qr1"
             contents="bitcoincash:?r=https://bitpay.com/i/exampleh3mCKGUna7v9S1z"
